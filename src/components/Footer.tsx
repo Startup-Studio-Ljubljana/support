@@ -1,12 +1,10 @@
-import { config } from "@/config";
-
 export default function Footer() {
 	return (
   <footer id="footer" className="bg-gray-900 pt-0 lg:pt-16 relative">
     <div className="w-2/3 mx-auto">
       <div className="text-center space-y-4 lg:w-2/3 mx-auto">
-        <h2 className="heading-3 hidden lg:block text-white z-20">
-          Onboarding to {config.companyName} will be the{" "}
+        <h2 className="heading-2 hidden lg:block text-white z-20">
+          Onboarding to Buascribe will be the{" "}
           <span className="text-primary-500">easiest </span>decision you ever
           make
         </h2>
@@ -28,7 +26,7 @@ export default function Footer() {
             <li>
               <a
                 className="text-regular text-neutral-50 hover:underline"
-                href="/contact"
+                href="/about"
               >
                 About us
               </a>
@@ -98,7 +96,7 @@ export default function Footer() {
       </div>
     </div>
     <p className="text-xs text-neutral-50 mt-6 pb-8 text-center">
-      Copyright {config.companyName}, 2025. All rights reserved
+      Copyright Buascribe, 2025. All rights reserved
     </p>
   </footer>
 );

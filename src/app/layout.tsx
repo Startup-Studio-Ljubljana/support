@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-	title: "Unpicked",
+	title: "Bauscribe",
 	description: "Industrial brochure translation platform built for industrial inDesign brochures",
 };
 

@@ -9,32 +9,33 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "How many languages does Unpicked support?",
-    answer: <p>On Unpicked, you can translate content into 280+ languages.</p>,
+    question: "How many languages does Bauscribe support?",
+    answer: <p>On Bauscribe, you can translate content into 280+ languages.</p>,
   },
   {
-    question: "What file formats can I translate on Unpicked?",
+    question: "What file formats can I translate on Bauscribe?",
     answer: (
       <p>
-        Unpicked supports brochures in IDML format and uploading terminology in
+        Bauscribe supports brochures in IDML format and uploading terminology in
         XLSX or CSV
       </p>
     ),
   },
   {
-    question: "What are the benefits of using Unpicked over other solutions?",
+    question: "What are the benefits of using Bauscribe over other solutions?",
     answer: (
       <p>
-        Unpicked translation engine is trained and optimized for translating
+        Bauscribe translation engine is trained and optimized for translating
         construction brochures.
       </p>
     ),
   },
   {
-    question: "Why can you translate documents faster with Unpicked?",
+    question: "Why can you translate documents faster with Bauscribe?",
     answer: (
       <p>
-		Unpicked parallelizes translation jobs to deliver results in minutes instead of hours.
+        Bauscribe parallelizes translation jobs to deliver results in minutes
+        instead of hours.
       </p>
     ),
   },
@@ -66,13 +67,11 @@ function AccordionItem({ item }: { item: FAQItem }) {
 
 export default function FAQSection() {
   return (
-    <div className="flex flex-col lg:flex-row w-full px-6 py-8 lg:py-12 --hp-faq max-w-[76rem] mx-auto">
+    <div className="flex flex-col lg:flex-row w-full px-6 py-10 lg:py-12 --hp-faq max-w-[76rem] mx-auto">
       <div className="lg:w-1/3 flex flex-col justify-start">
-        <h3 className="heading-3 font-semibold text-gray-900 mb-6">
-          Frequently Asked Questions
-        </h3>
-        <p className="text-gray-600 lg:text-lg leading-relaxed">
-          Find answers to common questions about Unpicked
+        <h2 className="heading-2 mb-4 md:mb-6 max-md:text-center">Frequently Asked Questions</h2>
+        <p className="text-gray-600 lg:text-lg leading-relaxed max-md:text-center">
+          Find answers to common questions about Bauscribe.
         </p>
       </div>
       <div className="hidden lg:block w-12" />

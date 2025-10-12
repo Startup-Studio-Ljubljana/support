@@ -188,7 +188,7 @@ export default function Navbar() {
             </li>
             <li className="flex">
               <a
-                href="/"
+                href="/about"
                 className="text-secondary-light font-medium group transition duration-300 group"
               >
                 About
@@ -271,7 +271,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/"
+                href="/about"
                 className="font-medium flex text-white hover:text-black"
               >
                 About

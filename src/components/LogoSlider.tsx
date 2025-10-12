@@ -19,7 +19,7 @@ const LogoSlider = ({ small = false }: { small?: boolean }) => {
     setIsMobile(window.innerWidth < 768);
   }, []);
 
-  const animationDuration = isMobile ? "8s" : "25s";
+  const animationDuration = isMobile ? "15s" : "25s";
 
   return (
     <div className="relative w-full overflow-hidden">
@@ -42,7 +42,7 @@ const LogoSlider = ({ small = false }: { small?: boolean }) => {
         className="flex animate-scroll-left"
         style={{
           animationDuration,
-          width: "calc(200% + 100px)",
+          width: `calc(200% + (${isMobile ? 1 : 2}rem * ${logos.length * 2}))`,
         }}
       >
         {/* duplicated logos for seamless loop */}
@@ -50,8 +50,8 @@ const LogoSlider = ({ small = false }: { small?: boolean }) => {
           <div
             key={`${logo.name}-${i}`}
             className={`flex ${
-              isMobile ? "min-w-[100px]" : small ? "min-w-[150px]" : "min-w-[200px]"
-            } items-center justify-center md:px-4 transition-all duration-300`}
+              small ? "min-w-[150px]" : "min-w-[200px]"
+            } max-md:min-w-[120px] items-center justify-center px-2 md:px-4 transition-all duration-300`}
             style={{ transform: `scale(${logo.scale})` }}
           >
             <img
