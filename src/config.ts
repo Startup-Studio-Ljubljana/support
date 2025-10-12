@@ -1,3 +1,3 @@
-export const config = {
-	companyName: "Unpicked",
+export const siteConfig = {
+  companyName: "BauScribe",
 };

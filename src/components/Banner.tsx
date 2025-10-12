@@ -9,9 +9,10 @@ export default function Banner({ className }: BannerProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="font-semibold text-4xl sm:text-5xl leading-tight sm:leading-snug tracking-tight text-gray-900 mb-8">
-          Discover why <span className="text-primary-500">industrial</span>&nbsp;companies 
-		  <br />
-		  choose&nbsp;Unpicked
+          Discover why <span className="text-primary-500">industrial</span>
+          &nbsp;companies
+          <br />
+          choose&nbsp;BauScribe
         </h3>
 
         <a

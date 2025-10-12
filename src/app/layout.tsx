@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Toaster } from "sonner";
+import Provider from "./providers";
 
 export const metadata: Metadata = {
-	title: "Unpicked",
-	description: "Industrial brochure translation platform built for industrial inDesign brochures",
+  title: "BauScribe",
+  description:
+    "Industrial brochure translation platform built for industrial inDesign brochures",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className="antialiased">
-				{children}
-				<Toaster />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        <Provider>{children}</Provider>
+      </body>
+    </html>
+  );
 }

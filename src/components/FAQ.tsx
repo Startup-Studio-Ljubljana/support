@@ -9,32 +9,33 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "How many languages does Unpicked support?",
-    answer: <p>On Unpicked, you can translate content into 280+ languages.</p>,
+    question: "How many languages does BauScribe support?",
+    answer: <p>On BauScribe, you can translate content into 280+ languages.</p>,
   },
   {
-    question: "What file formats can I translate on Unpicked?",
+    question: "What file formats can I translate on BauScribe?",
     answer: (
       <p>
-        Unpicked supports brochures in IDML format and uploading terminology in
+        BauScribe supports brochures in IDML format and uploading terminology in
         XLSX or CSV
       </p>
     ),
   },
   {
-    question: "What are the benefits of using Unpicked over other solutions?",
+    question: "What are the benefits of using BauScribe over other solutions?",
     answer: (
       <p>
-        Unpicked translation engine is trained and optimized for translating
+        BauScribe translation engine is trained and optimized for translating
         construction brochures.
       </p>
     ),
   },
   {
-    question: "Why can you translate documents faster with Unpicked?",
+    question: "Why can you translate documents faster with BauScribe?",
     answer: (
       <p>
-		Unpicked parallelizes translation jobs to deliver results in minutes instead of hours.
+        BauScribe parallelizes translation jobs to deliver results in minutes
+        instead of hours.
       </p>
     ),
   },
@@ -72,7 +73,7 @@ export default function FAQSection() {
           Frequently Asked Questions
         </h3>
         <p className="text-gray-600 lg:text-lg leading-relaxed">
-          Find answers to common questions about Unpicked
+          Find answers to common questions about BauScribe
         </p>
       </div>
       <div className="hidden lg:block w-12" />
