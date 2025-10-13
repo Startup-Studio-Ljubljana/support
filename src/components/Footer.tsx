@@ -58,14 +58,6 @@ export default function Footer() {
                   Chat with us
                 </a>
               </li>
-              <li>
-                <a
-                  className="text-regular text-neutral-50 hover:underline"
-                  href="/contact"
-                >
-                  Log in
-                </a>
-              </li>
             </ul>
           </div>
           <div>
