@@ -5,7 +5,7 @@ interface HeroSectionProps {
 export default function HeroSection({ className }: HeroSectionProps) {
   return (
     <div className={`block-list ${className}`}>
-      <div className="h-20 lg:h-52"></div>
+      <div className="h-20 lg:h-36"></div>
 
       <section className="text-center max-w-7xl mx-auto px-4">
         <div className="flex flex-col">

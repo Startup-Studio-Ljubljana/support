@@ -89,93 +89,14 @@ export default function Navbar() {
             <img className="h-7 w-auto" src="assets/logo.svg" alt="logo" />
           </a>
           <ul className="lg:flex justify-evenly sm:gap-x-4 lg:gap-x-8 hidden items-center grow">
-            <li className="relative group pointer-events-none">
+            <li className="flex">
               <a
-                href="/"
-                className="hover:text-white text-secondary-light font-medium transition flex items-center"
+                href="/#product"
+                className="text-secondary-light font-medium group transition duration-300 group"
               >
                 Product
-                <svg
-                  className="ml-1 w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
               </a>
-              <ul className="absolute hidden group-hover:block bg-white rounded-3xl shadow-xl top-full p-4 min-w-[300px] sm:min-w-[360px] z-50 transition-opacity duration-300 ease-in-out">
-                <li>
-                  <a
-                    href="/"
-                    className="flex items-start p-4 hover:bg-gray-50 rounded-2xl transition duration-150 ease-in-out cursor-pointer"
-                  >
-                    <div className="mr-4 flex-shrink-0">
-                      <div className="w-16 h-16 bg-white shadow-md rounded-xl flex items-center justify-center">
-                        <img src="/" alt="WooCommerce" className="w-10" />
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-base">
-                        Woocommerce Chatbot
-                      </p>
-                      <p className="text-sm text-gray-500 mt-0.5">
-                        AI assistant that sells and builds long-term loyalty{" "}
-                        <span className="ml-1 text-yellow-500">💰</span>
-                      </p>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-2">
-                  <a
-                    href="/"
-                    className="flex items-start p-4 hover:bg-gray-50 rounded-2xl transition duration-150 ease-in-out cursor-pointer"
-                  >
-                    <div className="mr-4 flex-shrink-0">
-                      <div className="w-16 h-16 bg-white shadow-md rounded-xl flex items-center justify-center">
-                        <img src="/" alt="Wordpress" className="w-10 h-10" />
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-base">
-                        WordPress Chatbot
-                      </p>
-                      <p className="text-sm text-gray-500 mt-0.5">
-                        Convert visitors into loyal customers 24/7{" "}
-                        <span className="ml-1 text-red-500">📈</span>
-                      </p>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-2">
-                  <a
-                    href="/"
-                    className="flex items-start p-4 hover:bg-gray-50 rounded-2xl transition duration-150 ease-in-out cursor-pointer"
-                  >
-                    <div className="mr-4 flex-shrink-0">
-                      <div className="w-16 h-16 bg-white shadow-md rounded-xl flex items-center justify-center">
-                        <img src="/" alt="Facebook" className="w-10 h-10" />
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-base">
-                        Facebook Chatbot
-                      </p>
-                      <p className="text-sm text-gray-500 mt-0.5">
-                        Turn every FB comment and DM into a sale{" "}
-                        <span className="ml-1 text-pink-400">🛍️</span>
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="flex">
               <a
@@ -236,35 +157,20 @@ export default function Navbar() {
           style={{ maxHeight: isOpen ? "none" : "0px" }}
         >
           <ul className="flex flex-col gap-y-5 topnav-list pt-8 text-lg">
-            <li className="relative">
-              <details className="group">
-                <summary className="cursor-pointer font-medium text-black list-none flex items-center justify-between">
-                  Product
-                  <i className="fa-solid fa-chevron-down text-xs ml-2 group-open:rotate-180 transition-transform duration-300"></i>
-                </summary>
-                <ul className="pl-4 mt-2 space-y-2">
-                  <li>
-                    <a href="/" className="text-white hover:text-black">
-                      WordPress Chatbot
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/" className="text-white hover:text-black">
-                      Woocommerce Chatbot
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/" className="text-white hover:text-black">
-                      Facebook Chatbot
-                    </a>
-                  </li>
-                </ul>
-              </details>
+            <li>
+              <a
+                href="/#product"
+                className="font-medium flex text-white hover:text-black"
+                onClick={() => setIsOpen(false)}
+              >
+                Product
+              </a>
             </li>
             <li>
               <a
                 href="/"
                 className="font-medium flex text-white hover:text-black"
+                onClick={() => setIsOpen(false)}
               >
                 Blog
               </a>
@@ -273,6 +179,7 @@ export default function Navbar() {
               <a
                 href="/about"
                 className="font-medium flex text-white hover:text-black"
+                onClick={() => setIsOpen(false)}
               >
                 About
               </a>
@@ -281,6 +188,7 @@ export default function Navbar() {
               <a
                 href="/pricing"
                 className="text-secondary-light font-medium group transition duration-300 group"
+                onClick={() => setIsOpen(false)}
               >
                 Pricing
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>

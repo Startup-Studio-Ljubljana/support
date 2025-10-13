@@ -14,9 +14,9 @@ export default function Home() {
     <div className="min-h-[100dvh]">
       <main className="flex flex-col relative">
         <Navbar />
-        <HeroSection className="max-md:mb-4 mb-18" />
+        <HeroSection className="max-md:mb-4 mb-16" />
 
-        <section className="container max-w-[76rem] mx-auto max-md:px-4 mb-16 md:mb-24 mt-6">
+        <section className="container max-w-[76rem] mx-auto max-md:px-4 mb-18 md:mb-32 mt-6">
           <h2 className="text-2xl md:text-3xl font-medium text-center text-gray-600 mb-4 md:mb-8">
             Trusted by
             <span className="hidden sm:inline">{` `}industrial companies</span>:
@@ -26,6 +26,7 @@ export default function Home() {
 
         <section className="container max-w-[76rem] mx-auto max-md:px-4 max-md:mb-12 mb-18">
           <ImprovementsSections />
+          <div id="product" className="h-0"/>
         </section>
 
         <section className="max-md:px-3 pt-8 md:pt-12 pb-16 md:pb-32 bg-[#f0f1f4]">

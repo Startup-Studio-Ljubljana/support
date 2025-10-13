@@ -87,7 +87,7 @@ body {
 }
 
 .heading-2 {
-  @apply text-[32px] leading-[36px] md:text-6xl font-semibold text-gray-900;
+  @apply text-[32px] leading-[36px] md:text-[54px] md:leading-[60px] font-semibold text-gray-900;
 }
 
 
