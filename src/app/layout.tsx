@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Toaster } from "sonner";
+import Provider from "./providers";
 
 export const metadata: Metadata = {
 	title: "Bauscribe",
@@ -8,16 +8,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className="antialiased">
-				{children}
-				<Toaster />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        <Provider>{children}</Provider>
+      </body>
+    </html>
+  );
 }
