@@ -13,28 +13,28 @@ export default function FeaturesSection({ className }: { className?: string }) {
       title: "Brochures",
       subtitle: "Upload InDesign file",
       description: "Upload your documents and let AI translate them.",
-      image: "/assets/demo2.png",
+      image: "/assets/demo2.webp",
     },
     {
       icon: BookType,
       title: "Terminology",
       subtitle: "Accurate & consistent",
       description: "AI learns your terminology and uses it consistently.",
-      image: "/assets/demo4.png",
+      image: "/assets/demo3.webp",
     },
     {
       icon: Rocket,
       title: "Translation",
       subtitle: "Done in minutes",
       description: "No more waiting for hours or days.",
-      image: "/assets/demo3.png",
+      image: "/assets/demo4.webp",
     },
     {
       icon: UserSearch,
       title: "Review",
       subtitle: "Easy & efficient",
       description: "Inuitive inteface for easy review and approval.",
-      image: "/assets/demo3.png",
+      image: "/assets/demo5.webp",
     },
   ];
 
@@ -62,7 +62,9 @@ export default function FeaturesSection({ className }: { className?: string }) {
           <h3 className="text-xl md:text-3xl font-semibold">
             {features[activeFeature].subtitle}
           </h3>
-          <p className="text-lg text-muted-foreground">{features[activeFeature].description}</p>
+          <p className="text-lg text-muted-foreground">
+            {features[activeFeature].description}
+          </p>
           <a href="/contact" className="mt-auto hidden md:block">
             <Button className="px-6 py-5 text-lg w-fit rounded-full">
               Get Started
