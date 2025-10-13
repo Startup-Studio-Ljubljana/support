@@ -1,24 +1,26 @@
 "use client";
 
-import { PricingCard } from "@/components/pricing/PricingCard";
+import {
+  PaymentFrequency,
+  PricingCard,
+} from "@/components/pricing/PricingCard";
 import { PricingHeader } from "@/components/pricing/PricingHeader";
-import { PAYMENT_FREQUENCIES, TIERS } from "@/config/index";
+import { TIERS } from "@/config/index";
 import { useState } from "react";
 
+const PAYMENT_FREQUENCIES = [PaymentFrequency.Monthly, PaymentFrequency.Yearly];
+
 export const Pricing = () => {
-  const [selectedPaymentFreq, setSelectedPaymentFreq] = useState(
-    PAYMENT_FREQUENCIES[1],
+  const [paymentFrequency, setPaymentFrequency] = useState(
+    PaymentFrequency.Yearly,
   );
 
   return (
     <section className="relative flex flex-col items-center gap-10 py-10">
-      {/* Section Header */}
       <PricingHeader
-        title="Plans and Pricing"
-        subtitle="Receive unlimited credits when you pay yearly, and save on your plan."
         frequencies={PAYMENT_FREQUENCIES}
-        selectedFrequency={selectedPaymentFreq}
-        onFrequencyChange={setSelectedPaymentFreq}
+        selectedFrequency={paymentFrequency}
+        onFrequencyChange={setPaymentFrequency}
       />
 
       {/* Pricing Cards */}
@@ -27,7 +29,7 @@ export const Pricing = () => {
           <PricingCard
             key={tier.id}
             tier={tier}
-            paymentFrequency={selectedPaymentFreq}
+            paymentFrequency={paymentFrequency}
           />
         ))}
       </div>

@@ -62,7 +62,7 @@ export default function Home() {
             your needs
           </h1>
           <p className="hidden md:block text-gray-600 text-lg leading-relaxed">
-            Schedule a 1:1 consultation with a BauScribe expert to explore how
+            Schedule a 1:1 consultation with a Bauscribe expert to explore how
             our AI-driven platform can help your business scale multilingual
             content—no commitments required.
           </p>
@@ -131,7 +131,7 @@ export default function Home() {
               </Button>
               <p className="text-gray-600 text-xs leading-relaxed md:pb-2">
                 By clicking "Request demo" you acknowledge that you have read
-                and understood, and agree to BauScribe Terms of Service and
+                and understood, and agree to Bauscribe Terms of Service and
                 Privacy Policy and Consent Notice.
               </p>
             </form>

@@ -3,6 +3,7 @@
 # dependencies
 .open-next
 /node_modules
+.idea/
 /.pnp
 .pnp.*
 .yarn/*

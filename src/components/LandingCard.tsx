@@ -15,11 +15,11 @@ export function LandingCard({
 }
 
 export function LandingCardTitle({ children, className }: { children: React.ReactNode, className?: string }) {
-  return <h2 className={cn("text-3xl md:text-4xl font-semibold", className)}>{children}</h2>;
+  return <h2 className={cn("heading-2", className)}>{children}</h2>;
 }
 
 export function LandingCardSubtitle({ children, className }: { children: React.ReactNode, className?: string }) {
-  return <h3 className={cn("text-2xl md:text-3xl font-semibold", className)}>{children}</h3>;
+  return <h3 className={cn("text-3xl md:text-2xl font-semibold", className)}>{children}</h3>;
 }
 
 export function LandingCardContent({

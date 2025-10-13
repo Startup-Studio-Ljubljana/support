@@ -87,69 +87,9 @@ body {
 }
 
 .heading-2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 46px;
+  @apply text-[32px] leading-[36px] md:text-6xl font-semibold text-gray-900;
 }
 
-@media (min-width: 768px) {
-  .heading-2 {
-    font-size: 54px;
-    line-height: 60px;
-  }
-}
-
-.heading-3 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 38px;
-}
-
-@media (min-width: 768px) {
-  .heading-3 {
-    font-size: 44px;
-    line-height: 50px;
-  }
-}
-
-.heading-4 {
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 36px;
-}
-
-@media (min-width: 768px) {
-  .heading-4 {
-    font-size: 34px;
-    line-height: 40px;
-  }
-}
-
-.heading-5 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-}
-
-@media (min-width: 768px) {
-  .heading-5 {
-    font-size: 26px;
-    line-height: 34px;
-  }
-}
-
-.heading-6 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-}
-
-@media (min-width: 768px) {
-  .heading-6 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
 
 .text-large {
   font-size: 18px;

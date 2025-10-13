@@ -1,18 +1,17 @@
 import { Tab } from "@/components/ui/tab";
+import { PaymentFrequency } from "./PricingCard";
+
+interface PricingHeaderProps {
+  frequencies: PaymentFrequency[];
+  selectedFrequency: PaymentFrequency;
+  onFrequencyChange: (frequency: PaymentFrequency) => void;
+}
 
 export const PricingHeader = ({
-  title,
-  subtitle,
   frequencies,
   selectedFrequency,
   onFrequencyChange,
-}: {
-  title: string;
-  subtitle: string;
-  frequencies: string[];
-  selectedFrequency: string;
-  onFrequencyChange: (frequency: string) => void;
-}) => (
+}: PricingHeaderProps) => (
   <div className="space-y-7 text-center">
     <div className="mx-auto flex w-fit rounded-full bg-[#F3F4F6] p-1 dark:bg-[#222]">
       {frequencies.map((freq) => (

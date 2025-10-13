@@ -1,6 +1,6 @@
 import posthog from "posthog-js";
 
-if (process.env.NEXT_PUBLIC_ENVIRONMENT !== "development") {
+if (process.env.VERCEL_ENV === "production") {
   let consecutiveFailures = 0;
 
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
@@ -8,9 +8,7 @@ if (process.env.NEXT_PUBLIC_ENVIRONMENT !== "development") {
     ui_host: "https://eu.posthog.com",
     defaults: "2025-05-24",
     loaded: (posthog) => {
-      if (process.env.NEXT_PUBLIC_ENVIRONMENT !== "production") {
-        posthog.debug();
-      }
+        // posthog.debug();
 
       if (posthog.get_distinct_id?.() === "anonymous-id") {
         posthog.reset();

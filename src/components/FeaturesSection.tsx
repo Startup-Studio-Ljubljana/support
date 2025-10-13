@@ -53,16 +53,16 @@ export default function FeaturesSection({ className }: { className?: string }) {
             onKeyDown={(e) => e.key === "Enter" && setActiveFeature(index)}
           >
             <feature.icon className="size-6" />
-            <h4 className="text-lg font-semibold">{feature.title}</h4>
+            <h4 className="md:text-lg font-semibold">{feature.title}</h4>
           </li>
         ))}
       </ul>
       <div className="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-8">
         <div className="flex flex-col gap-2 md:gap-4 md:min-w-1/3">
-          <h3 className="text-2xl md:text-3xl font-semibold">
+          <h3 className="text-xl md:text-3xl font-semibold">
             {features[activeFeature].subtitle}
           </h3>
-          <p className="text-lg">{features[activeFeature].description}</p>
+          <p className="text-lg text-muted-foreground">{features[activeFeature].description}</p>
           <a href="/contact" className="mt-auto hidden md:block">
             <Button className="px-6 py-5 text-lg w-fit rounded-full">
               Get Started

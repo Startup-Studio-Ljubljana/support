@@ -5,14 +5,13 @@ interface BannerProps {
 export default function Banner({ className }: BannerProps) {
   return (
     <section
-      className={`text-black text-center my-12 pt-12 pb-12 bg-[#F2F3F7] rounded-2xl w-full max-w-[76rem] mx-auto ${className}`}
+      className={`text-black text-center md:my-12 pt-12 pb-12 bg-[#F2F3F7] rounded-2xl w-full max-w-[76rem] mx-auto ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="font-semibold text-4xl sm:text-5xl leading-tight sm:leading-snug tracking-tight text-gray-900 mb-8">
-          Discover why <span className="text-primary-500">industrial</span>
-          &nbsp;companies
-          <br />
-          choose&nbsp;BauScribe
+          Discover why <span className="text-primary-500">industrial</span>&nbsp;companies 
+		  <br />
+		  choose&nbsp;Bauscribe
         </h3>
 
         <a

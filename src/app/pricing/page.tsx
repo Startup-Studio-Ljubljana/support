@@ -14,7 +14,7 @@ export default function Home() {
         <Navbar />
 
         <section className="container max-w-[76rem] mx-auto max-md:px-4 mt-12">
-          <h2 className="text-3xl md:text-5xl font-semibold text-center mt-4 md:mt-12 mb-4 md:mb-18">
+          <h2 className="text-3xl md:text-5xl font-semibold text-center mt-4 md:mt-12 mb-4 md:mb-14">
             Find the right plan for&nbsp;you
           </h2>
           <h3 className="text-xl md:text-xl font-medium text-center text-gray-600 mb-4 md:mb-6">
@@ -23,7 +23,7 @@ export default function Home() {
           <LogoSlider small />
         </section>
 
-        <section className="container max-w-[76rem] mx-auto max-md:px-4 md:mb-18 md:mt-10">
+        <section className="container max-w-[76rem] mx-auto max-md:px-4 md:mb-18 md:mt-2">
           <Pricing />
         </section>
 
