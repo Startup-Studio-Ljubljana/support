@@ -3,9 +3,15 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, X } from "lucide-react";
+
+export enum PaymentFrequency {
+  Monthly = "monthly",
+  Yearly = "yearly",
+}
+
 interface PricingCardProps {
   tier: PricingTier;
-  paymentFrequency: "monthly" | "yearly";
+  paymentFrequency: PaymentFrequency;
 }
 
 export const PricingCard = ({ tier, paymentFrequency }: PricingCardProps) => {

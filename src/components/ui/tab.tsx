@@ -1,11 +1,12 @@
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { Badge } from "./badge";
+import { PaymentFrequency } from "../pricing/PricingCard";
 
 interface TabProps {
-  text: string;
+  text: PaymentFrequency;
   selected: boolean;
-  setSelected: (text: string) => void;
+  setSelected: (text: PaymentFrequency) => void;
   discount?: boolean;
 }
 

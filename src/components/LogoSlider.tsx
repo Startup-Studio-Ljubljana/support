@@ -4,13 +4,48 @@ import { useEffect, useState } from "react";
 
 const LogoSlider = ({ small = false }: { small?: boolean }) => {
   const logos = [
-    { name: "Mg Engineers", image: "/assets/partners/mg-engineers.png", scale: "0.9" },
-    { name: "Klančar", image: "/assets/partners/klancar.png", scale: "1" },
-    { name: "Spanos", image: "/assets/partners/spanos.svg", scale: "1" },
-    { name: "Intech Group", image: "/assets/partners/intech.svg", scale: "1" },
-    { name: "Tecon", image: "/assets/partners/tecon.png", scale: "1" },
-    { name: "Ringer", image: "/assets/partners/ringer.png", scale: "1.3" },
-    { name: "Sweco", image: "/assets/partners/sweco.png", scale: "0.9" },
+    {
+      name: "Mg Engineers",
+      image: "/assets/partners/mg-engineers.png",
+      scale: "0.9",
+      margin: "0",
+    },
+    {
+      name: "Klančar",
+      image: "/assets/partners/klancar.png",
+      scale: "1.2",
+      margin: "0",
+    },
+    {
+      name: "Spanos",
+      image: "/assets/partners/spanos.svg",
+      scale: "0.9",
+      margin: "10px 0 0",
+    },
+    {
+      name: "Intech Group",
+      image: "/assets/partners/intech.svg",
+      scale: "0.8",
+      margin: "0",
+    },
+    {
+      name: "Tecon",
+      image: "/assets/partners/tecon.png",
+      scale: "1",
+      margin: "0",
+    },
+    {
+      name: "Ringer",
+      image: "/assets/partners/ringer.png",
+      scale: "1.3",
+      margin: "7px 0 0 0",
+    },
+    {
+      name: "Sweco",
+      image: "/assets/partners/sweco.png",
+      scale: "0.9",
+      margin: "0 0 8px",
+    },
   ];
 
   const [isMobile, setIsMobile] = useState(false);
@@ -52,7 +87,10 @@ const LogoSlider = ({ small = false }: { small?: boolean }) => {
             className={`flex ${
               small ? "min-w-[150px]" : "min-w-[200px]"
             } max-md:min-w-[120px] items-center justify-center px-2 md:px-4 transition-all duration-300`}
-            style={{ transform: `scale(${logo.scale})` }}
+            style={{
+              transform: `scale(${logo.scale})`,
+              margin: logo.margin,
+            }}
           >
             <img
               src={logo.image}

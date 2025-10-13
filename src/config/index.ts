@@ -1,9 +1,9 @@
-export const PAYMENT_FREQUENCIES = ["monthly", "yearly"] as const;
+import { PaymentFrequency } from "@/components/pricing/PricingCard";
 
 export interface PricingTier {
   name: string;
   id: string;
-  price: Record<string, number | string>;
+  price: Record<PaymentFrequency, number | string>;
   description: string;
   features: string[];
   notAvailable: string[];
