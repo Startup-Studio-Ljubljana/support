@@ -86,7 +86,7 @@ export default function Navbar() {
       <nav className="top-nav light-variant">
         <div className="flex items-center justify-between gap-[5rem]">
           <a className="shrink-0" href="/">
-            <img className="h-7 w-auto" src="assets/logo.svg" alt="logo" />
+            <img className="h-5 md:h-7 w-auto" src="assets/logo.svg" alt="logo" />
           </a>
           <ul className="lg:flex justify-evenly sm:gap-x-4 lg:gap-x-8 hidden items-center grow">
             <li className="flex">
