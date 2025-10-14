@@ -34,7 +34,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
             </a>
           </div>
         </div>
-        <div className="flex flex-col md:px-12 max-md: pt-28">
+        <div className="flex flex-col md:px-12 pt-20 md:pt-28">
           <VideoPlayer src="/assets/demo.mp4" />
         </div>
       </section>

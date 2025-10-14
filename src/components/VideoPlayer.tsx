@@ -142,7 +142,7 @@ export const VideoPlayer = ({ src, poster, className }: VideoPlayerProps) => {
     >
       <video
         ref={videoRef}
-        src={src}
+        src={`${src}#t=0.1`}
         poster={poster}
         className={cn(
           "w-full h-full object-cover",
@@ -179,7 +179,7 @@ export const VideoPlayer = ({ src, poster, className }: VideoPlayerProps) => {
           "absolute bottom-0 left-0 right-0",
           "bg-gradient-to-t from-black/50 to-black/30",
           "backdrop-blur-md p-2.5 md:p-4 transition-all duration-300 m-1 mb-3 rounded-2xl",
-          (showControls || !isPlaying) && currentTime > 0
+          (showControls || !isPlaying) && currentTime > 1
             ? "translate-y-0 opacity-100"
             : "translate-y-full opacity-0",
         )}
