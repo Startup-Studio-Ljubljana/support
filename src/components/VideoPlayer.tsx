@@ -142,7 +142,7 @@ export const VideoPlayer = ({ src, poster, className }: VideoPlayerProps) => {
     >
       <video
         ref={videoRef}
-        src={`${src}#t=0.1`}
+        src={`${src}#t=0.01`}
         poster={poster}
         className={cn(
           "w-full h-full object-cover",
