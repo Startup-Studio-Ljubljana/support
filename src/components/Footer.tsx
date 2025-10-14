@@ -30,7 +30,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-regular text-neutral-50 hover:underline"
-                  href="/contact"
+                  href="/#features"
                 >
                   How it works
                 </a>
@@ -58,14 +58,6 @@ export default function Footer() {
                   Chat with us
                 </a>
               </li>
-              <li>
-                <a
-                  className="text-regular text-neutral-50 hover:underline"
-                  href="/contact"
-                >
-                  Log in
-                </a>
-              </li>
             </ul>
           </div>
           <div>
@@ -74,7 +66,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-regular text-neutral-50 hover:underline"
-                  href="/"
+                  href="/tos"
                 >
                   Terms of Service
                 </a>
@@ -82,7 +74,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-regular text-neutral-50 hover:underline"
-                  href="/"
+                  href="/privacy-policy"
                 >
                   Privacy Policy
                 </a>
