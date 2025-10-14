@@ -26,10 +26,13 @@ export default function Home() {
 
         <section className="container max-w-[76rem] mx-auto max-md:px-4 max-md:mb-12 mb-18">
           <ImprovementsSections />
-          <div id="product" className="h-0"/>
+          <div id="product" className="h-0" />
         </section>
 
-        <section className="max-md:px-3 pt-8 md:pt-12 pb-16 md:pb-32 bg-[#f0f1f4]">
+        <section
+          id="features"
+          className="max-md:px-3 pt-8 md:pt-12 pb-16 md:pb-32 bg-[#f0f1f4]"
+        >
           <h2 className="heading-2 text-center mb-6 md:mb-16">
             Reinvent your global content
           </h2>

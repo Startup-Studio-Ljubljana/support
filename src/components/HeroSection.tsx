@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface HeroSectionProps {
   className: string;
 }
@@ -11,11 +13,13 @@ export default function HeroSection({ className }: HeroSectionProps) {
         <div className="flex flex-col">
           <div>
             <h1 className="text-[#0e1017] font-semibold md:font-medium text-4xl md:text-[80px] leading-none tracking-[-0.84px] md:tracking-tight mb-8 md:mb-12">
-              Translation platform built&nbsp;for{' '}
-              <span className="text-primary-500">industrial</span>&nbsp;brochures
+              Translation platform built&nbsp;for{" "}
+              <span className="text-primary-500">industrial</span>
+              &nbsp;brochures
             </h1>
             <p className="text-[#555869] text-lg md:text-2xl leading-snug tracking-[-0.32px] md:tracking-[-0.5px]">
-              Where&nbsp;every&nbsp;term,&nbsp;spec, and&nbsp;standard&nbsp;matters.
+              Where&nbsp;every&nbsp;term,&nbsp;spec,
+              and&nbsp;standard&nbsp;matters.
             </p>
           </div>
           <div className="mt-8 md:mt-16">
@@ -31,7 +35,13 @@ export default function HeroSection({ className }: HeroSectionProps) {
           </div>
         </div>
         <div className="flex flex-col md:px-12 pt-20">
-          <img src="/assets/demo.png" alt="Demo" />
+          <Image
+            src="/assets/demo2.webp"
+            alt="Demo"
+            width={1920}
+            height={1080}
+            className="rounded-2xl"
+          />
         </div>
       </section>
     </div>
