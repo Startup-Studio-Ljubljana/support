@@ -20,14 +20,14 @@ export default function FeaturesSection({ className }: { className?: string }) {
       title: "Terminology",
       subtitle: "Accurate & consistent",
       description: "AI learns your terminology and uses it consistently.",
-      image: "/assets/demo3.webp",
+      image: "/assets/demo4.webp",
     },
     {
       icon: Rocket,
       title: "Translation",
       subtitle: "Done in minutes",
       description: "No more waiting for hours or days.",
-      image: "/assets/demo4.webp",
+      image: "/assets/demo3.webp",
     },
     {
       icon: UserSearch,
